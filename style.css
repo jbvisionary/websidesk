@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+}
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: gold;
+}
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+.buy-btn {
+  margin-top: 2rem;
+  background-color: gold;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.buy-btn:hover {
+  background-color: #d4af37;
+}
+.about, .gallery, footer {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(212,175,55,0.35);
+  transition: transform 0.3s;
+}
+.gallery img:hover { transform: scale(1.04); }
+.fade-in { opacity: 0; animation: fadeIn 1.1s forwards; }
+.fade-in-delay { opacity: 0; animation: fadeIn 1.1s forwards 0.4s; }
+.fade-in-delay2 { opacity: 0; animation: fadeIn 1.1s forwards 0.8s; }
+@keyframes fadeIn { to { opacity: 1; } }
