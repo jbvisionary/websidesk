@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STYKION</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="location.href='#top'">STYKION</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="top">
+    <img src="https://imgur.com/VKR5D1d.png" alt="STYKION Logo" />
+    <h1>STATUS. POWER. DISCIPLINE.</h1>
+    <p>Clothing for those who aim to reach the top. Inspired by greatness. Made for leaders.</p>
+    <button class="explore-btn" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'});">Explore Products</button>
+  </div>
+
+  <h2 class="catalog-title">DROP 0</h2>
+  <section class="catalog" id="products">
+    <div class="product">
+      <img src="https://imgur.com/m6vUTCR.png" alt="White Tee" />
+      <h3>SK White</h3>
+      <p>Gold $K Logo<br />49€</p>
+      <button class="buy-btn">Buy</button>
+    </div>
+    <div class="product">
+      <img src="https://imgur.com/hDAiVmM.png" alt="Gray Tee" />
+      <h3>SK Gray</h3>
+      <p>Gold $K Logo<br />49€</p>
+      <button class="buy-btn">Buy</button>
+    </div>
+    <div class="product">
+      <img src="https://imgur.com/splx5qn.png" alt="Black Tee" />
+      <h3>SK Black</h3>
+      <p>Gold $K Logo<br />49€</p>
+      <button class="buy-btn">Buy</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Discipline. Legacy. Greatness.<br />More than clothing — it’s a movement.</p>
+  </section>
+
+  <section id="contact">
+    <p>Email: contact@stykion.com</p>
+    <p>
+      <a href="https://instagram.com/stykion" target="_blank">Instagram</a> |
+      <a href="https://tiktok.com/@stykionofficial" target="_blank">TikTok</a> |
+      <a href="#">X</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 STYKION. All rights reserved.
+  </footer>
+</body>
+</html>
