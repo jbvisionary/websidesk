@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFD700;
+  cursor: pointer;
+}
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+.hero img {
+  width: 220px;
+  transition: transform 0.3s ease-in-out;
+  background: transparent;
+}
+.hero img:hover {
+  transform: scale(1.1);
+}
+.hero h1 {
+  font-size: 32px;
+  color: #FFD700;
+  margin-top: 20px;
+}
+.hero p {
+  font-size: 16px;
+  color: #ccc;
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #FFD700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.catalog-title {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 20px;
+}
+.catalog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+}
+.product {
+  text-align: center;
+  max-width: 250px;
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product h3 {
+  margin: 10px 0 5px;
+  color: #fff;
+}
+.product p {
+  margin: 0 0 10px;
+  color: #ccc;
+}
+.buy-btn {
+  padding: 8px 16px;
+  border: 2px solid #FFD700;
+  background: transparent;
+  color: #FFD700;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#about, #contact {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+#about h2, #contact h2 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+#about p, #contact p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  color: #ccc;
+}
+footer a {
+  color: #FFD700;
+  margin: 0 5px;
+  text-decoration: none;
+}
