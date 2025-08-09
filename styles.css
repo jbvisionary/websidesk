@@ -40,13 +40,14 @@ img{max-width:100%;display:block}
 
 /* Hero */
 .hero-logo{
-  width:min(42vw,280px);
+  width:min(48vw,320px);      /* ↑ un poco más grande */
   margin:0 auto 1rem;
-  transition:transform .25s ease;
-  filter: drop-shadow(0 0 10px rgba(255,215,0,.32));
-  mix-blend-mode: screen; /* QUICK FIX: oculta el recuadro negro sobre fondo negro */
+  transition:transform .25s ease, filter .25s ease;
+  filter: drop-shadow(0 0 12px rgba(255,215,0,.32)); /* glow sutil */
+  /* NO mix-blend-mode: ya es PNG transparente */
 }
-.hero-logo:hover{transform:scale(1.08)}
+.hero-logo:hover{ transform: scale(1.08); }
+
 .hero h1{font-size:clamp(1.75rem,2.2vw+1rem,2.5rem);color:var(--gold);margin:.5rem 0}
 .sub{color:var(--muted);max-width:56ch;margin:0 auto 1.5rem}
 .btn{
