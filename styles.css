@@ -16,6 +16,7 @@ img{max-width:100%;display:block}
 }
 .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#111;color:var(--fg);padding:.5rem .75rem;border-radius:.5rem;outline:2px solid var(--gold)}
 
+/* Header */
 .site-header{
   position:sticky;top:0;z-index:10;
   background:rgba(0,0,0,.9);
@@ -28,12 +29,22 @@ img{max-width:100%;display:block}
 .site-nav a{color:var(--fg);opacity:.9}
 .site-nav a:hover{color:var(--gold)}
 
-.hero{padding:6rem 1.25rem 2rem;text-align:center}
+/* Generic section & separators */
+.section{padding:3rem 1.25rem;text-align:center;position:relative}
+.section--divider{border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.section--panel{
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,0)) , #050505;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 10px 30px rgba(0,0,0,.35);
+}
+.section--hero{padding-top:6rem}
+
+/* Hero */
 .hero-logo{
-  width:min(42vw,260px);
+  width:min(42vw,280px);
   margin:0 auto 1rem;
   transition:transform .25s ease;
   filter: drop-shadow(0 0 10px rgba(255,215,0,.32));
+  mix-blend-mode: screen; /* QUICK FIX: oculta el recuadro negro sobre fondo negro */
 }
 .hero-logo:hover{transform:scale(1.08)}
 .hero h1{font-size:clamp(1.75rem,2.2vw+1rem,2.5rem);color:var(--gold);margin:.5rem 0}
@@ -52,18 +63,20 @@ img{max-width:100%;display:block}
 }
 .btn-social{display:inline-block;margin:.25rem .35rem;background:#111;border:1px solid rgba(255,255,255,.12);padding:.55rem .85rem;border-radius:.5rem}
 
-.catalog{padding:2rem 1rem 3rem}
-.catalog-title{text-align:center;margin:0 0 1rem;color:#fff}
-.product-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;max-width:1100px;margin:0 auto}
+/* Catalog */
+.catalog-title{text-align:center;margin:0 0 1.25rem;color:#fff}
+.product-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;max-width:1100px;margin:0 auto}
 .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:1rem;padding:1rem;box-shadow:0 2px 18px rgba(0,0,0,.25)}
 .price-line{color:var(--muted);margin:.4rem 0 .6rem}
 
-.section{padding:2.5rem 1rem;text-align:center}
-.about h2,.contact h2{color:#fff}
-.hint{color:var(--muted)}
+/* Contact */
+.follow{color:#fff;font-weight:700;margin:.5rem 0 0}
+.socials{margin-top:.5rem}
 
+/* Footer */
 .site-footer{padding:1.25rem;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
 
+/* Motion preferences */
 @media (prefers-reduced-motion: reduce){
   .hero-logo{transition:none}
   .btn{transition:none}
