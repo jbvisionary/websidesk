@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STYKION — Drop 0</title>
+  <meta name="description" content="STYKION — Status. Power. Discipline. Drop 0 streetwear collection." />
+  <link rel="preconnect" href="https://i.imgur.com" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <a href="#top" id="homeLink" aria-label="Go to top">STYKION</a>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#drop-intro">Drop 0</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO (full screen) -->
+    <section class="hero section section--hero vh" id="top" aria-labelledby="hero-title">
+      <img
+        src="https://i.imgur.com/Kt50Hn9.png"
+        alt="STYKION gold emblem"
+        class="hero-logo"
+        width="420"
+        height="420"
+        decoding="async"
+        fetchpriority="high"
+      />
+      <h1 id="hero-title">STATUS. POWER. DISCIPLINE.</h1>
+      <p class="sub">Clothing for those who aim to reach the top. Inspired by greatness. Made for leaders.</p>
+      <button class="btn btn-primary" id="exploreBtn" aria-controls="drop-intro">Explore Products</button>
+    </section>
+
+    <!-- DROP 0 INTRO (full screen) -->
+    <section class="section section--panel vh" id="drop-intro" aria-labelledby="drop-intro-title">
+      <div class="drop-intro-wrap">
+        <img class="drop-emblem" src="https://i.imgur.com/mKMMQlM.png" alt="STYKION Drop 0 Emblem" width="220" height="220" />
+        <div class="drop-copy">
+          <h2 id="drop-intro-title">DROP 0 — First Release</h2>
+          <p>Limited pieces. Premium feel. Designed for relentless ambition.</p>
+          <button class="btn btn-outline" id="viewProductsBtn" aria-controls="products">View Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS (animated cards) -->
+    <section class="catalog section section--panel" id="products" aria-labelledby="catalog-title">
+      <h2 class="catalog-title" id="catalog-title">DROP 0</h2>
+      <div class="product-row">
+        <article class="product card reveal" aria-labelledby="p1-title">
+          <div class="media">
+            <img
+              src="https://imgur.com/m6vUTCR.png"
+              alt="SK White tee with gold $K logo"
+              loading="lazy"
+              width="600" height="750"
+            />
+          </div>
+        <div class="meta">
+          <h3 id="p1-title">SK White</h3>
+          <p class="price-line">Gold $K Logo • <strong>49€</strong></p>
+          <button class="btn btn-outline" type="button" aria-label="Buy SK White (decorative)">Buy</button>
+        </div>
+        </article>
+
+        <article class="product card reveal" aria-labelledby="p2-title">
+          <div class="media">
+            <img
+              src="https://imgur.com/hDAiVmM.png"
+              alt="SK Gray tee with gold $K logo"
+              loading="lazy"
+              width="600" height="750"
+            />
+          </div>
+        <div class="meta">
+          <h3 id="p2-title">SK Gray</h3>
+          <p class="price-line">Gold $K Logo • <strong>49€</strong></p>
+          <button class="btn btn-outline" type="button" aria-label="Buy SK Gray (decorative)">Buy</button>
+        </div>
+        </article>
+
+        <article class="product card reveal" aria-labelledby="p3-title">
+          <div class="media">
+            <img
+              src="https://imgur.com/splx5qn.png"
+              alt="SK Black tee with gold $K logo"
+              loading="lazy"
+              width="600" height="750"
+            />
+          </div>
+        <div class="meta">
+          <h3 id="p3-title">SK Black</h3>
+          <p class="price-line">Gold $K Logo • <strong>49€</strong></p>
+          <button class="btn btn-outline" type="button" aria-label="Buy SK Black (decorative)">Buy</button>
+        </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT (compact) -->
+    <section class="about section section--divider" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Us</h2>
+      <p>Discipline. Legacy. Greatness.<br>More than clothing — it’s a movement.</p>
+    </section>
+
+    <!-- CONTACT (compact) -->
+    <section class="contact section section--panel" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Email: <a href="mailto:contact@stykion.com">contact@stykion.com</a></p>
+      <p class="follow">Follow us</p>
+      <div class="socials">
+        <a class="btn btn-social" href="https://instagram.com/stykion" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram">Instagram</a>
+        <a class="btn btn-social" href="https://tiktok.com/@stykionofficial" target="_blank" rel="noopener noreferrer" aria-label="Open TikTok">TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <small>&copy; <span id="year"></span> STYKION. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
