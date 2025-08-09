@@ -82,3 +82,15 @@ img{max-width:100%;display:block}
   .hero-logo{transition:none}
   .btn{transition:none}
 }
+/* Secciones y panel para diferenciar */
+.section{padding:3rem 1.25rem;text-align:center;position:relative}
+.section--hero{padding-top:6rem}
+.section--panel{
+  background: radial-gradient(70% 120% at 50% -10%, rgba(255,215,0,.06), transparent 60%) , #050505;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 10px 30px rgba(0,0,0,.35);
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.catalog-title{color:#fff;margin:0 0 1.25rem}
+.product-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;max-width:1100px;margin:0 auto}
+.card{background:#0a0a0a;border:1px solid rgba(255,255,255,.06);border-radius:1rem;padding:1rem;box-shadow:0 2px 18px rgba(0,0,0,.25)}
