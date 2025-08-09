@@ -1,0 +1,59 @@
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --gold:#FFD700;
+  --muted:#ccc;
+}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:Segoe UI, sans-serif;
+}
+a{color:var(--gold);text-decoration:none}
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:rgba(0,0,0,.9);
+  position:sticky;
+  top:0;
+}
+.brand a{
+  font-weight:bold;
+  font-size:1.5rem;
+  color:var(--gold);
+}
+.site-nav ul{
+  display:flex;
+  gap:1rem;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.site-nav a{color:var(--fg)}
+.hero-logo{
+  width:min(50vw,360px);
+  margin:0 auto 1rem;
+  display:block;
+  filter: drop-shadow(0 0 14px rgba(255,215,0,.28)) contrast(1.05) saturate(1.05);
+  transition: transform .25s ease, filter .25s ease;
+}
+.hero-logo:hover{
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 18px rgba(255,215,0,.38)) contrast(1.08) saturate(1.08);
+}
+.section{padding:3rem 1.25rem;text-align:center}
+.section--divider{border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.section--panel{background:rgba(255,215,0,.02)}
+.catalog-title{margin-bottom:1.5rem}
+.product-row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.card{background:#111;padding:1rem;border-radius:.5rem;width:250px}
+.card img{max-width:100%;border-radius:.5rem}
+.btn{cursor:pointer;padding:.5rem 1rem;border-radius:.5rem}
+.btn-primary{background:var(--gold);color:#000;font-weight:bold}
+.btn-outline{border:2px solid var(--gold);background:transparent;color:var(--gold)}
+.follow{margin-top:1rem;font-weight:bold}
+.btn-social{background:#111;border:1px solid rgba(255,255,255,.12);padding:.5rem .75rem;border-radius:.5rem;display:inline-block;margin:.25rem}
+.site-footer{padding:1rem;text-align:center;color:var(--muted)}

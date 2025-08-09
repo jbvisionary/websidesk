@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STYKION — Drop 0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="#top" id="homeLink">STYKION</a>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section section--hero" id="top">
+      <img
+        src="https://i.imgur.com/Kt50Hn9.png"
+        alt="STYKION gold emblem"
+        class="hero-logo"
+        width="420"
+        height="420"
+        decoding="async"
+        fetchpriority="high"
+      />
+      <h1>STATUS. POWER. DISCIPLINE.</h1>
+      <p class="sub">Clothing for those who aim to reach the top. Inspired by greatness. Made for leaders.</p>
+      <button class="btn btn-primary" id="exploreBtn">Explore Products</button>
+    </section>
+
+    <section class="catalog section" id="products">
+      <h2 class="catalog-title">DROP 0</h2>
+      <div class="product-row">
+        <article class="product card">
+          <img src="https://imgur.com/m6vUTCR.png" alt="SK White" />
+          <h3>SK White</h3>
+          <p>Gold $K Logo • 49€</p>
+          <button class="btn btn-outline">Buy</button>
+        </article>
+        <article class="product card">
+          <img src="https://imgur.com/hDAiVmM.png" alt="SK Gray" />
+          <h3>SK Gray</h3>
+          <p>Gold $K Logo • 49€</p>
+          <button class="btn btn-outline">Buy</button>
+        </article>
+        <article class="product card">
+          <img src="https://imgur.com/splx5qn.png" alt="SK Black" />
+          <h3>SK Black</h3>
+          <p>Gold $K Logo • 49€</p>
+          <button class="btn btn-outline">Buy</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section section--divider">
+      <h2>About Us</h2>
+      <p>Discipline. Legacy. Greatness.<br>More than clothing — it’s a movement.</p>
+    </section>
+
+    <section id="contact" class="section section--panel">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:contact@stykion.com">contact@stykion.com</a></p>
+      <p class="follow">Follow us</p>
+      <div class="socials">
+        <a class="btn btn-social" href="https://instagram.com/stykion" target="_blank">Instagram</a>
+        <a class="btn btn-social" href="https://tiktok.com/@stykionofficial" target="_blank">TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> STYKION. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
